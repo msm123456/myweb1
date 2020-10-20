@@ -38,7 +38,7 @@
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>خانه</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>درباره ی من</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>سرویس ها</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
@@ -195,9 +195,10 @@
     	<div class="container">
     		<div class="row justify-content-center py-5 mt-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          	<h1 class="big big-2">سرویس ها</h1>
+            <h2 class="mb-4">سرویس ها</h2>
+{% for x in my_services %}
+            <p>{{x.Servicetext}}</p>
           </div>
         </div>
     		<div class="row">
@@ -207,7 +208,7 @@
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Web Design</h3>
+								<h3 class="mb-5">{{x.Service1}}</h3>
 							</div>
 						</a>
 					</div>
@@ -217,7 +218,7 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Phtography</h3>
+								<h3 class="mb-5">{{x.Service2}}</h3>
 							</div>
 						</a>
 					</div>
@@ -227,7 +228,7 @@
 								<i class="flaticon-ideas"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Web Developer</h3>
+								<h3 class="mb-5">{{x.Service3}}</h3>
 							</div>
 						</a>
 					</div>
@@ -238,7 +239,7 @@
 								<i class="flaticon-analysis"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">App Developing</h3>
+								<h3 class="mb-5">{{x.Service4}}</h3>
 							</div>
 						</a>
 					</div>
@@ -248,7 +249,7 @@
 								<i class="flaticon-flasks"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Branding</h3>
+								<h3 class="mb-5">{{x.Service5}}</h3>
 							</div>
 						</a>
 					</div>
@@ -258,7 +259,7 @@
 								<i class="flaticon-ideas"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">Product Strategy</h3>
+								<h3 class="mb-5">{{x.Service6}}</h3>
 							</div>
 						</a>
 					</div>
@@ -266,6 +267,7 @@
     	</div>
     </section>
 
+{% endfor %}
 		
 		<section class="ftco-section" id="skills-section">
 			<div class="container">
@@ -637,7 +639,7 @@
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>خانه</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>درباره ی من</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>سرویس ها</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
@@ -645,7 +647,7 @@
           </div>
           <div class="col-md">
              <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
+              <h2 class="ftco-heading-2">سرویس ها</h2>
               <ul class="list-unstyled">
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
                 <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>

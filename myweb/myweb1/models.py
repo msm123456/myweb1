@@ -15,13 +15,18 @@ class  my_about(models.Model):
     email=models.CharField(max_length=100)
     phonenumber=models.CharField(max_length=100)
     completed_projects=models.CharField(max_length=15)
+class  Services(models.Model):
+    Servicetext=models.CharField(max_length=100)
+    Service1=models.CharField(max_length=100)
+    Service2=models.CharField(max_length=100)
+    Service3=models.CharField(max_length=100)
+    Service4=models.CharField(max_length=100)
+    Service5=models.CharField(max_length=100)
+    Service6=models.CharField(max_length=100)
 # class  About(models.Model):
 #     image=models.ImageField(upload_to="image/",default='')
 #     image1=models.ImageField(upload_to="image/",default='')
 # class  Resume(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  Services(models.Model):
 #     image=models.ImageField(upload_to="image/",default='')
 #     image1=models.ImageField(upload_to="image/",default='')
 # class  Skills(models.Model):
