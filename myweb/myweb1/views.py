@@ -20,9 +20,9 @@ def home(request):
             ['dr737944@gmail.com'],
         #fail_silently=True
         )
-        return render(request,'index.html',{"home_ob":home_ob,"about_ob":about_ob,"my_services":my_services})
+        return render(request,'index.html',{"home_ob":home_ob,"about_ob":about_ob,"my_services":my_services,"my_resume":my_resume})
     else:
-        return render(request,'index.html',{"home_ob":home_ob,"about_ob":about_ob,"my_services":my_services},"my_resume":my_resume})
+        return render(request,'index.html',{"home_ob":home_ob,"about_ob":about_ob,"my_services":my_services,"my_resume":my_resume})
         
 # Create your views here.
 
