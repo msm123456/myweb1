@@ -53,21 +53,14 @@ class  Services(models.Model):
     Service4=models.CharField(max_length=100)
     Service5=models.CharField(max_length=100)
     Service6=models.CharField(max_length=100)
-# class  About(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  Resume(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  Skills(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  Projects(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  My_Blog(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
-# class  Contact(models.Model):
-#     image=models.ImageField(upload_to="image/",default='')
-#     image1=models.ImageField(upload_to="image/",default='')
+
+class  skills(models.Model):
+    skill_text1=models.CharField(max_length=100)
+    skill_span1=models.CharField(max_length=100)
+    skill_num1=models.CharField(max_length=10)
+    skill_span2=models.CharField(max_length=100)
+    skill_num2=models.CharField(max_length=10)
+    skill_span3=models.CharField(max_length=100)
+    skill_num3=models.CharField(max_length=10)
+    skill_span4=models.CharField(max_length=100)
+    skill_num4=models.CharField(max_length=10)
