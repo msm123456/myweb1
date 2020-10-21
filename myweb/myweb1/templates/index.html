@@ -37,7 +37,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>خانه</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>درباره ی من</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>رزومه</span></a></li>
 	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>سرویس ها</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
@@ -135,51 +135,52 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          	<h1 class="big big-2">رزومه</h1>
+            <h2 class="mb-4">رزومه</h2>
+			{% for x in  %}
+            <p></p>
           </div>
         </div>
     		<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Master Degree of Design</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date1}}</span>
+    					<h2>{{x.resume_title1}}</h2>
+    					<span class="position">{{x.resume_span1}}</span>
+    					<p class="mt-4">{{x.resume_text1}}</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Bachelor's Degree of C.A</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date2}}</span>
+    					<h2>{{x.resume_title2}}</h2>
+    					<span class="position">{{x.resume_span2}}</span>
+    					<p class="mt-4">{{x.resume_text2}}</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Diploma in Computer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date3}}</span>
+    					<h2>{{x.resume_title3}}</h2>
+    					<span class="position">{{x.resume_span3}}</span>
+    					<p class="mt-4">{{x.resume_text3}}</p>
     				</div>
     			</div>
 
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Art &amp; Creative Director</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date4}}</span>
+    					<h2>{{x.resume_title4}}</h2>
+    					<span class="position">C{{x.resume_span4}}</span>
+    					<p class="mt-4">{{x.resume_text4}}</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2014-2015</span>
-    					<h2>Wordpress Developer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date5}}</span>
+    					<h2>{{x.resume_title5}}</h2>
+    					<span class="position">{{x.resume_span5}}</span>
+    					<p class="mt-4">{{x.resume_text5}}</p>
     				</div>
     				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2018</span>
-    					<h2>UI/UX Designer</h2>
-    					<span class="position">Cambridge University</span>
-    					<p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    					<span class="date">{{x.resume_date6}}</span>
+    					<h2>{{x.resume_title6}}</h2>
+    					<span class="position">{{x.resume_span6}}</span>
+    					<p class="mt-4">{{x.resume_text6}}</p>
     				</div>
     			</div>
     		</div>
@@ -190,6 +191,7 @@
     		</div>
     	</div>
     </section>
+	{% endfor %}
 
     <section class="ftco-section" id="services-section">
     	<div class="container">
