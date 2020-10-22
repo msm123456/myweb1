@@ -36,15 +36,6 @@ class  resume(models.Model):
     resume_span4=models.CharField(max_length=100)
     resume_text4=models.CharField(max_length=100)
     #
-    resume_date5=models.CharField(max_length=100)
-    resume_title5=models.CharField(max_length=100)
-    resume_span5=models.CharField(max_length=100)
-    resume_text5=models.CharField(max_length=100)
-    #
-    resume_date6=models.CharField(max_length=100)
-    resume_title6=models.CharField(max_length=100)
-    resume_span6=models.CharField(max_length=100)
-    resume_text6=models.CharField(max_length=100)
 class  Services(models.Model):
     Servicetext=models.CharField(max_length=100)
     Service1=models.CharField(max_length=100)
