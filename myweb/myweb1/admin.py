@@ -6,6 +6,7 @@ from .models import Services
 from .models import skills
 from .models import projects
 from .models import blog
+from .models import contact
 # Register your models here.
 admin.site.register(my_home)
 admin.site.register(my_about)
@@ -14,3 +15,4 @@ admin.site.register(Services)
 admin.site.register(skills)
 admin.site.register(projects)
 admin.site.register(blog)
+admin.site.register(contact)
