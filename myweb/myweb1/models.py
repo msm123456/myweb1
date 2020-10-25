@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 class  my_home(models.Model):
     myname=models.CharField(max_length=100)
@@ -20,22 +19,18 @@ class  resume(models.Model):
     resume_title1=models.CharField(max_length=100)
     resume_span1=models.CharField(max_length=100)
     resume_text1=models.CharField(max_length=100)
-    #
     resume_date2=models.CharField(max_length=100)
     resume_title2=models.CharField(max_length=100)
     resume_span2=models.CharField(max_length=100)
     resume_text2=models.CharField(max_length=100)
-    #
     resume_date3=models.CharField(max_length=100)
     resume_title3=models.CharField(max_length=100)
     resume_span3=models.CharField(max_length=100)
     resume_text3=models.CharField(max_length=100)
-    #
     resume_date4=models.CharField(max_length=100)
     resume_title4=models.CharField(max_length=100)
     resume_span4=models.CharField(max_length=100)
     resume_text4=models.CharField(max_length=100)
-    #
 class  Services(models.Model):
     Servicetext=models.CharField(max_length=100)
     Service1=models.CharField(max_length=100)
@@ -44,7 +39,6 @@ class  Services(models.Model):
     Service4=models.CharField(max_length=100)
     Service5=models.CharField(max_length=100)
     Service6=models.CharField(max_length=100)
-
 class  skills(models.Model):
     skill_text1=models.CharField(max_length=100)
     skill_span1=models.CharField(max_length=100)
@@ -55,7 +49,6 @@ class  skills(models.Model):
     skill_num3=models.CharField(max_length=10)
     skill_span4=models.CharField(max_length=100)
     skill_num4=models.CharField(max_length=10)
-
 class  projects(models.Model):
     project_text=models.CharField(max_length=100)
     project_pic1=models.ImageField(upload_to="image/",default='')
@@ -82,3 +75,25 @@ class  projects(models.Model):
     project_6about1=models.CharField(max_length=100)
     project_6about2=models.CharField(max_length=100)
     project_work6=models.CharField(max_length=100)
+class blog(models.Model):
+    headtext=models.CharField(max_length=100)
+    image1=models.ImageField(upload_to="image/",default='')
+    date1=models.CharField(max_length=100)
+    admin1=models.CharField(max_length=100,null=True)
+    spantext1=models.CharField(max_length=100)
+    text1=models.CharField(max_length=100)
+    image2=models.ImageField(upload_to="image/",default='')
+    date2=models.CharField(max_length=100)
+    admin2=models.CharField(max_length=100,null=True)
+    spantext2=models.CharField(max_length=100)
+    text2=models.CharField(max_length=100)
+    image3=models.ImageField(upload_to="image/",default='')
+    date3=models.CharField(max_length=100)
+    admin3=models.CharField(max_length=100,null=True)
+    spantext3=models.CharField(max_length=100)
+    text3=models.CharField(max_length=100)
+    awards=models.CharField(max_length=10)
+    projects=models.CharField(max_length=10)
+    happy=models.CharField(max_length=10)
+    freeheadtext=models.CharField(max_length=100,null=True)
+    freetext=models.CharField(max_length=10,null=True)
